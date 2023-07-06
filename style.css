@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("https://static.tvgazeta.com.br/uploads/2022/12/previsao-do-tempo-final-de-ano-viagens-.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  background: black;
+  opacity: 0.8;
+
+  border-radius: 25px;
+
+  padding: 20px;
+  width: 95%;
+  max-width: 420px;
+}
+
+.container input {
+  border: none;
+  outline: none;
+
+  padding: 10px;
+  width: calc(100% - 50px);
+
+  border-radius: 25px;
+
+  background-color: #7c7c7c2b;
+
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.container input::placeholder {
+  font-size: 12px;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.container input:hover::placeholder {
+  transform: scale(0);
+}
+
+.container button {
+  border: none;
+  border-radius: 50px;
+
+  outline: none;
+
+  padding: 10px;
+  height: 40px;
+  float: right;
+
+  background-color: #7c7c7c2b;
+
+  cursor: pointer;
+}
+
+.container button img {
+  width: 20px;
+}
+
+.container button:hover {
+  transform: scale(1.2);
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.description {
+  margin-top: 15px;
+}
+
+.description h2 {
+  color: #ffffff;
+
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.temp {
+  font-size: 20px;
+  color: #ffffff;
+
+  float: right;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 160px;
+}
+
+.box p {
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.umi {
+  color: #ffffff;
+  margin-top: 15px;
+}
